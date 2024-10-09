@@ -1,0 +1,27 @@
+tags:
+  scalar:
+  vector: { add_tags: [ scalar ] }
+  matrix: { add_tags: [ scalar ] }
+  variable: { add_tags: [ scalar ] }
+  parametrized_scalar: { add_tags: [ variable ] }
+
+  addition:
+  divide:
+  multiply:
+  subtraction:
+  inverse:
+
+  add_row_to_row_n_times: { add_tags: [ matrix, addition, multiply ] }
+  exchange_rows: { add_tags: [ matrix ] }
+  multiply_row_by_n: { add_tags: [ matrix, multiply ] }
+
+  triangular: { add_tags: [ add_row_to_row_n_times, exchange_rows, divide ] }
+  triangular_det: { add_tags: [ add_row_to_row_n_times, exchange_rows, multiply_row_by_n, divide ] }
+
+  determinant: { add_tags: [ triangular_det ] }
+  minor: { add_tags: [ determinant ] }
+  alg_supplement: { add_tags: [ minor ] }
+
+  transpose: { add_tags: [ matrix ] }
+  reduce: { add_tags: [ add_row_to_row_n_times, multiply_row_by_n ] }
+  rank: { add_tags: [ reduce ] }

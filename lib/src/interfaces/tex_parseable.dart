@@ -1,0 +1,3 @@
+class TexParseable {
+  String toTeX() => '';
+}

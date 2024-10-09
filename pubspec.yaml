@@ -1,0 +1,15 @@
+name: algebra_expressions
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  big_fraction: ^6.0.0
+  collection: ^1.17.2
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.24.0
