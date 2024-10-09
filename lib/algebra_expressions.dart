@@ -3,7 +3,6 @@
 /// More dartdocs go here.
 library;
 
-export 'src/algebra_lib_base.dart';
 export 'src/exceptions.dart';
 export 'src/expressions/bool_operations/and.dart';
 export 'src/expressions/bool_operations/are_equal.dart';

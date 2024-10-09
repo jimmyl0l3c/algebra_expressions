@@ -1,5 +1,5 @@
-import 'package:algebra_lib/algebra_lib.dart';
-import 'package:algebra_lib/src/utils/exp_utils.dart';
+import 'package:algebra_expressions/algebra_expressions.dart';
+import 'package:algebra_expressions/src/utils/exp_utils.dart';
 import 'package:test/test.dart';
 
 import 'utils/scalar_provider.dart';
