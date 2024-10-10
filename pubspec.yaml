@@ -1,7 +1,7 @@
 name: algebra_expressions
-description: A starting point for Dart libraries or applications.
+description: Algebraic expressions.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/jimmyl0l3c/algebra_expressions
 
 environment:
   sdk: ^3.5.3
