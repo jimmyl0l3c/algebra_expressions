@@ -1,0 +1,27 @@
+name: Release
+run-name: ${{ github.actor }} is publishing new release ${{ github.ref_name }} 🚀
+
+on:
+  push:
+    tags:
+    - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish-gh-release:
+    runs-on: ubuntu-latest
+    name: Create GitHub release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+
+  publish-to-pub-dev:
+    name: Publish to pub.dev
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      environment: pub.dev
